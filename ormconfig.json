@@ -1,0 +1,34 @@
+[
+  {
+    "name": "manaira",
+    "type": "postgres",
+    "port": 5432,
+    "host": "localhost",
+    "username": "postgres",
+    "password": "postgres",
+    "database": "leitura_manaira",
+    "entities": [
+      "./src/application/entities/*/*.ts"
+    ],
+    "migrations": ["./src/infrastructure/databases/typeorm/migrations/*.ts"],
+    "cli": {
+      "migrationsDir": "./src/infrastructure/databases/typeorm/migrations"
+    }
+  },
+  {
+    "name": "mangabeira",
+    "type": "postgres",
+    "port": 5432,
+    "host": "localhost",
+    "username": "postgres",
+    "password": "postgres",
+    "database": "leitura_mangabeira",
+    "entities": [
+      "./src/application/entities/*/*.ts"
+    ],
+    "migrations": ["./src/infrastructure/databases/typeorm/migrations/*.ts"],
+    "cli": {
+      "migrationsDir": "./src/infrastructure/databases/typeorm/migrations"
+    }
+  }
+]

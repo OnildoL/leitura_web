@@ -8,13 +8,17 @@
     "start": "node dist/main/server.js",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "test": "jest",
-    "seed:admin": "ts-node-dev src/infrastructure/databases/seed/admin.ts"
+    "seed:admin": "ts-node-dev src/infrastructure/databases/typeorm/seed/admin.ts"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.41"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/express": "^4.17.13",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.12.0",
